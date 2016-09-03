@@ -1,0 +1,144 @@
+/*Custom CSS*/
+/*============*/
+
+//Typography vars
+$main-font: 1.6rem
+$h1: 3.4rem
+$h2: 2.6rem
+$h3: 2.0rem
+$h4: 1.8rem 
+$main-face: 'optima','Open Sans',sans-serif
+$second-face: 'Open Sans', sans-serif
+
+//fonts
+$regular : 400
+$bold: 700
+$SemiBold: 600
+$extra-bold : 800
+$italic: italic
+
+
+//colors vars
+$main-color: #1a1a1a
+$brown-color: #97783c
+$internal-color: white
+
+
+
+*
+	margin: 0
+	padding: 0
+	outline: 0!important
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	background-size: cover
+	background-position: center center
+	background-repeat: no-repeat
+	
+
+\:root
+	font-size: 10px
+
+
+html,body
+	height: 100%
+
+
+body
+	font-family: $main-face
+	font-size: inherit
+	line-height: 1.5
+	color: $main-color
+	font-weight: 400
+
+/*Give All anchors a transition*/
+a,button,.btn
+	-webkit-transition: all .45s
+	transition: all .45s
+
+
+img  
+	max-width: 100%
+	vertical-align: middle
+	border: none
+
+p , ul , form , table , div , ol
+	font-size: $main-font
+
+h1
+	font-size: $h1
+
+h2
+	font-size: $h2
+
+h3
+	font-size: $h3
+
+h4
+	font-size: $h4
+
+
+p
+	margin:  0 0 15px 0
+
+table
+	tr,td
+		border: 1px solid #ddd
+
+@for $i from 1 through 6
+	h#{$i}
+		margin:  0 0 15px 0
+		font-weight: inherit
+		line-height: inherit
+		a
+			color: inherit
+			font-size: inherit
+
+.fa
+	margin: 0 1.5rem 0
+
+label
+	font-weight: $regular
+
+.form
+	&-group
+		margin-bottom: 3rem
+	&-control
+
+.nav
+	&-tabs
+		&>li
+			&.active>a
+			&>a
+
+.pagination
+	&>li
+		&.active>a
+		&>a
+
+.breadcrumb
+	&>li
+		&.active>a
+		&>a
+
+.carousel
+	&-indicators
+		width: auto
+		margin: 0
+		left: auto
+		right: auto
+		bottom: 0
+		padding: 1rem 0
+		&>li
+.panel
+	&-group
+
+	&-heading
+
+	&-content
+
+	&-body
+
+//later adds
+
