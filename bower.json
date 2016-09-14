@@ -1,0 +1,23 @@
+{
+  "name": "besty-flow bootstrapv",
+  "homepage": "https://github.com/mahmoudZakaria90/bestyFlow-bootstrapVersion",
+  "authors": [
+    "Mahmoud Zakaria <m.zakria90@gmail.com>"
+  ],
+  "description": "Multiple classes = Shape your style",
+  "main": "",
+  "keywords": [
+    "HTML",
+    "CSS",
+    "Javascript",
+    "Bootstrap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
