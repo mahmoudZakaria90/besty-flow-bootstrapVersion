@@ -1,4 +1,4 @@
-// mixins per create selector, can be called any where in the document
+// mixins per selector, can be called any where in the document
 =gvFlexSelf_sct($selector,$value)
 	#{$selector}
 		-webkit-align-self: $value
@@ -19,27 +19,35 @@
 			size: $size
 			weight: $weight
 
-=gvMargin_sct($selector,$val...)
+=gvMargin_sct($selector,$value...)
 	#{$selector}
-		margin: $val
+		margin: $value
 
-=gvPadding_sct($selector,$val...)
+=gvPadding_sct($selector,$value...)
 	#{$selector}
-		padding: $val
+		padding: $value
 
 =gvBorder_sct($selector,$side,$width,$style,$color)
 	#{$selector}
 		border-#{$side}: $width $style $color
 
-=gvTransition_sct($selector,$val...)
+=gvRadius_sct($selector,$top-left,$top-right,$bottom-left,$bottom-right)
 	#{$selector}
-		-webkit-transition: $val
-		transition: $val
+		border-radius: $top-left $top-right $bottom-right $bottom-left
 
-=gvAnimation_sct($selector,$val...)
+=gvTransition_sct($selector,$value...)
 	#{$selector}
-		-webkit-animation: $val
-		animation: $val
+		-webkit-transition: $value
+		transition: $value
+
+=gvAnimation_sct($selector,$value...)
+	#{$selector}
+		-webkit-animation: $value
+		animation: $value
+
+=gvShadow_sct($selector,$type,$value...)
+	#{$selector}
+		#{$type}-shadow: $value
 
 //Gradient
 =gvGradient_sct($selector,$type,$colorStops...)
@@ -51,12 +59,12 @@
 // Top agent mixin
 // per create selectors and properties
 // Works perfect with non-prefixes properties
-=gv($selector,$property,$value)
+=gv($selector,$property,$value...)
 	#{$selector}
 		#{$property}: $value
 
 // Works perfect with prefixes properties
-=gvPre($selector,$property,$value)
+=gvPre($selector,$property,$value...)
 	#{$selector}
 		-webkit-#{$property}: $value
 		-moz-#{$property}: $value
