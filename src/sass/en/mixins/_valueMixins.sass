@@ -1,0 +1,39 @@
+// called mixins per value, called inside the selector only
+=gvFlexSelf_val($value)
+	-webkit-align-self: $value
+	-moz-align-self: $value
+	-o-align-self: $value
+	-ms-align-self: $value
+	align-self: $value
+
+=gvSize_val($width,$height)
+	width: $width
+	height: $height
+
+=gvFont_val($family,$size,$weight)
+	font:
+		family: $family
+		size: $size
+		weight: $weight
+
+=gvMargin_val($val...)
+	margin: $val
+
+=gvPadding_val($val...)
+	padding: $val
+
+=gvBorder_val($side,$width,$style,$color)
+	border-#{$side}: $width $style $color
+
+=gvTransition_val($val...)
+	-webkit-transition: $val
+	transition: $val
+
+=gvAnimation_val($val...)
+	-webkit-animation: $val
+	animation: $val
+
+//Gradient
+=gvGradient_val($type,$colorStops...)
+	background-image: #{$type}-gradient($colorStops)
+

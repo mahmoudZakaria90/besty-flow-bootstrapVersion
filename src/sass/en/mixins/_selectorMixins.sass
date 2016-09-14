@@ -1,0 +1,65 @@
+// mixins per create selector, can be called any where in the document
+=gvFlexSelf_sct($selector,$value)
+	#{$selector}
+		-webkit-align-self: $value
+		-moz-align-self: $value
+		-o-align-self: $value
+		-ms-align-self: $value
+		align-self: $value
+
+=gvSize_sct($selector,$width,$height)
+	#{$selector}
+		width: $width
+		height: $height
+		
+=gvFont_sct($selector,$family,$size,$weight)
+	#{$selector}
+		font:
+			family: $family
+			size: $size
+			weight: $weight
+
+=gvMargin_sct($selector,$val...)
+	#{$selector}
+		margin: $val
+
+=gvPadding_sct($selector,$val...)
+	#{$selector}
+		padding: $val
+
+=gvBorder_sct($selector,$side,$width,$style,$color)
+	#{$selector}
+		border-#{$side}: $width $style $color
+
+=gvTransition_sct($selector,$val...)
+	#{$selector}
+		-webkit-transition: $val
+		transition: $val
+
+=gvAnimation_sct($selector,$val...)
+	#{$selector}
+		-webkit-animation: $val
+		animation: $val
+
+//Gradient
+=gvGradient_sct($selector,$type,$colorStops...)
+	#{$selector}
+		background-image: #{$type}-gradient($colorStops)
+
+
+
+// Top agent mixin
+// per create selectors and properties
+// Works perfect with non-prefixes properties
+=gv($selector,$property,$value)
+	#{$selector}
+		#{$property}: $value
+
+// Works perfect with prefixes properties
+=gvPre($selector,$property,$value)
+	#{$selector}
+		-webkit-#{$property}: $value
+		-moz-#{$property}: $value
+		-o-#{$property}: $value
+		-ms-#{$property}: $value
+		#{$property}: $value

@@ -1,0 +1,223 @@
+//Regular mixins == default values
+
+//Margins
+=gvMargin()
+	&-lg
+		margin: $lg
+	&-md
+		margin: $md
+	&-sm
+		margin: $sm
+
+=gvMarginTB()
+	&-lg
+		margin: $lg 0
+	&-md
+		margin: $md 0
+	&-sm
+		margin: $sm 0
+
+=gvMarginRL()
+	&-lg
+		margin: 0 $lg
+	&-md
+		margin: 0 $md
+	&-sm
+		margin: 0 $sm
+
+=gvMarginTP()
+	&-lg
+		margin-top: $lg
+	&-md
+		margin-top: $md
+	&-sm
+		margin-top: $sm
+
+=gvMarginRT()
+	&-lg
+		margin-#{$dir-opp}: $lg
+	&-md
+		margin-#{$dir-opp}: $md
+	&-sm
+		margin-#{$dir-opp}: $sm
+
+=gvMarginBT()
+	&-lg
+		margin-bottom: $lg
+	&-md
+		margin-bottom: $md
+	&-sm
+		margin-bottom: $sm
+
+=gvMarginLF()
+	&-lg
+		margin-#{$dir}: $lg
+	&-md
+		margin-#{$dir}: $md
+	&-sm
+		margin-#{$dir}: $sm
+
+//Paddings
+=gvPadding()
+	&-lg
+		padding: $lg
+	&-md
+		padding: $md
+	&-sm
+		padding: $sm
+
+=gvPaddingTB()
+	&-lg
+		padding: $lg 0
+	&-md
+		padding: $md 0
+	&-sm
+		padding: $sm 0
+
+=gvPaddingRL()
+	&-lg
+		padding: 0 $lg
+	&-md
+		padding: 0 $md
+	&-sm
+		padding: 0 $sm
+
+=gvPaddingTP()
+	&-lg
+		padding-top: $lg
+	&-md
+		padding-top: $md
+	&-sm
+		padding-top: $sm
+
+=gvPaddingRT()
+	&-lg
+		padding-#{$dir-opp}: $lg
+	&-md
+		padding-#{$dir-opp}: $md
+	&-sm
+		padding-#{$dir-opp}: $sm
+
+=gvPaddingBT()
+	&-lg
+		padding-bottom: $lg
+	&-md
+		padding-bottom: $md
+	&-sm
+		padding-bottom: $sm
+
+=gvPaddingLF()
+	&-lg
+		padding-#{$dir}: $lg
+	&-md
+		padding-#{$dir}: $md
+	&-sm
+		padding-#{$dir}: $sm
+
+
+//Borders
+=gvBorder()
+	&-lg
+		border: $lg solid $border-color-default
+	&-md
+		border: $md solid $border-color-default
+	&-sm
+		border: $sm solid $border-color-default
+
+=gvBorderTP()
+	&-lg
+		border-top: $lg solid $border-color-default
+	&-md
+		border-top: $md solid $border-color-default
+	&-sm
+		border-top: $sm solid $border-color-default
+
+=gvBorderRT()
+	&-lg
+		border-right: $lg solid $border-color-default
+	&-md
+		border-right: $md solid $border-color-default
+	&-sm
+		border-right: $sm solid $border-color-default
+
+=gvBorderBT()
+	&-lg
+		border-bottom: $lg solid $border-color-default
+	&-md
+		border-bottom: $md solid $border-color-default
+	&-sm
+		border-bottom: $sm solid $border-color-default
+
+=gvBorderLF()
+	&-lg
+		border-left: $lg solid $border-color-default
+	&-md
+		border-left: $md solid $border-color-default
+	&-sm
+		border-left: $sm solid $border-color-default
+
+=gvFlexBox()
+	display: -webkit-flex
+	display: -moz-flex
+	display: -o-flex
+	display: -ms-flex
+	display: flex
+
+=gvFlexColumn()
+	-webkit-flex-direction: column
+	-moz-flex-direction: column
+	-ms-flex-direction: column
+	-o-flex-direction: column
+	flex-direction: column
+
+=gvFlexWrap()
+	-webkit-flex-wrap: wrap
+	-moz-flex-wrap: wrap
+	-ms-flex-wrap: wrap
+	-o-flex-wrap: wrap
+	flex-wrap: wrap
+
+=gvFlexCenter-v()
+	-webkit-align-items: center
+	-moz-align-items: center
+	-ms-align-items: center
+	-o-align-items: center
+	align-items: center
+
+=gvFlexCenter-h()
+	-webkit-justify-content: center
+	-moz-justify-content: center
+	-ms-justify-content: center
+	-o-justify-content: center
+	justify-content: center	
+
+=gvFlexStart-h()
+	-webkit-justify-content: flex-start
+	-moz-justify-content: flex-start
+	-ms-justify-content: flex-start
+	-o-justify-content: flex-start
+	justify-content: flex-start	
+
+=gvFlexStart-v()
+	-webkit-align-items: flex-start
+	-moz-align-items: flex-start
+	-ms-align-items: flex-start
+	-o-align-items: flex-start
+	align-items: flex-start	
+
+=gvFlexEnd-h()
+	-webkit-justify-content: flex-end
+	-moz-justify-content: flex-end
+	-ms-justify-content: flex-end
+	-o-justify-content: flex-end
+	justify-content: flex-end	
+
+=gvFlexEnd-v()
+	-webkit-align-items: flex-end
+	-moz-align-items: flex-end
+	-ms-align-items: flex-end
+	-o-align-items: flex-end
+	align-items: flex-end
+
+
+
