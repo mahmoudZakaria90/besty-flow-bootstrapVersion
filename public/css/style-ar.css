@@ -519,6 +519,18 @@ label {
   top: 0;
   right: 0;
 }
+.gv-ovflow-visible {
+  overflow: visible;
+}
+.gv-ovflow-hidden {
+  overflow: hidden;
+}
+.gv-ovflow-auto {
+  overflow: auto;
+}
+.gv-ovflow-scroll {
+  overflow: scroll;
+}
 .gv-shadow-box {
   box-shadow: 2px 2px 2px #ddd;
 }
