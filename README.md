@@ -1,2 +1,2 @@
-# Besty-flow
->>>>#### Ready, fast workflow for front end devs
+# BestyFLow
+###### Multiple classes = Shape your styles + Make your web pages faster
