@@ -1,30 +1,35 @@
 /*Custom CSS*/
 /*============*/
 
+//Simple reset
 *
 	margin: 0
 	padding: 0
-	outline: 0!important
+	outline: 0
 	-webkit-box-sizing: border-box
 	-moz-box-sizing: border-box
 	box-sizing: border-box
 	
+//base font size
+\:root
+	font-size: 10px
 
-html,body
+html,
+body
 	height: 100%
 
 
 body
 	font-family: $main-face
-	font-size: 10px
 	line-height: 1.5
 	color: $main-color
 	font-weight: 400
 
-/*Give All anchors a transition*/
-a,button,.btn
-	-webkit-transition: all .45s
-	transition: all .45s
+/*Give All anchors/button a transition*/
+a,
+button,
+input
+	+gvTransition_val(all 450ms)
 
 
 img  
@@ -32,7 +37,14 @@ img
 	vertical-align: middle
 	border: none
 
-p , ul , form , table , div , ol
+p,
+ul,
+ol,
+table,
+form,
+button,
+div,
+span
 	font-size: $main-font
 
 h1
@@ -47,26 +59,53 @@ h3
 h4
 	font-size: $h4
 
-
 p
-	margin:  0 0 15px 0
+	margin:  0 0 $reg 0
 
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]
+	@extend %btn
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
+input[type="number"]
+	padding: .6rem $reg
+	border: .1rem solid $border-color-default
+	border-radius: $border-radius-reg
+	&:focus
+		border-color: $second-color
 table
-	tr,td
-		border: 1px solid #ddd
+	width: 100%
+	border-spacing: 0
+	border-collapse: collapse
+	&,tr,td
+		border: 1px solid $border-color-default
+		
 
 @for $i from 1 through 6
 	h#{$i}
-		margin:  0 0 15px 0
+		margin:  0 0 $reg 0
 		font-weight: inherit
 		line-height: inherit
 		a
 			color: inherit
 			font-size: inherit
 
+//font-awesome icons
 .fa
-	margin: 0 1.5rem 0
+	margin: 0 $reg 0
 
 label
 	font-weight: normal
+
+
+input
+	border: none
+
+
+
 

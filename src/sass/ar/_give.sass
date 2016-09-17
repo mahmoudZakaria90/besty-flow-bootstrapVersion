@@ -15,6 +15,8 @@
 
 	&-underline
 		text-decoration: underline
+		&-no
+			text-decoration: none
 
 	&-uppercase
 		text-transform: uppercase
@@ -93,25 +95,33 @@
 			+gvPaddingLF()
 
 	//borders
-		&-border
-			border: $reg solid $border-color-default
-			+gvBorder()
+	&-border
+		border: $border-width-reg solid $border-color-default
+		+gvBorder()
 
-			&-top
-				border-top: $reg solid $border-color-default
-				+gvBorderTP()
+		&-top
+			border-top: $border-width-reg solid $border-color-default
+			+gvBorderTP()
 
-			&-right
-				border-right: $reg solid $border-color-default
-				+gvBorderRT()
+		&-right
+			border-right: $border-width-reg solid $border-color-default
+			+gvBorderRT()
 
-			&-bottom
-				border-bottom: $reg solid $border-color-default
-				+gvBorderBT()
+		&-bottom
+			border-bottom: $border-width-reg solid $border-color-default
+			+gvBorderBT()
 
-			&-left
-				border-bottom: $reg solid $border-color-default
-				+gvBorderLF()
+		&-left
+			border-bottom: $border-width-reg solid $border-color-default
+			+gvBorderLF()
+	&-radius
+		border-radius: $border-radius-reg
+		&-lg
+			border-radius: $border-radius-lg
+		&-md
+			border-radius: $border-radius-md
+		&-sm
+			border-radius: $border-radius-sm
 	//float
 	&-float
 		&-left
@@ -218,6 +228,7 @@
 			overflow: scroll
 
 	//Shadow
+
 	&-shadow
 		&-box
 			box-shadow: 2px 2px 2px $border-color-default

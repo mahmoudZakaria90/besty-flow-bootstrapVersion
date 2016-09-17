@@ -2,9 +2,21 @@
 $base: 12
 $gutter: 30
 @for $i from 1 through $base
-	.col-md
+	.gv
 		&-#{$i}
 			width: (($i / $base) * 100%)
 			position: relative
 			float: $dir
 			padding: 0  $gutter / 2 + px
+
+//row 
+.row
+	+gvMargin_val(0 -1.5rem)
+
+//clearfix
+.clf
+	&:before,&:after
+		content: ' '
+		display: table
+	&:after
+		clear: both

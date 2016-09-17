@@ -1,1 +1,16 @@
 // %placeholder to extend
+
+%btn
+	background: transparent
+	border: 1px solid $border-color-default
+	border-radius: .4rem
+	padding: .3em 1.5em 
+	cursor: pointer
+	position: relative
+	box-shadow: 0 2px 5px $border-color-default
+	&:active
+		box-shadow: none
+		top: 1px
+
+	&:hover
+		background-color: $second-color

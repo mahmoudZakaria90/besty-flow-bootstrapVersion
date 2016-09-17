@@ -16,10 +16,10 @@
 		size: $size
 		weight: $weight
 
-=gvMargin_val($value)
+=gvMargin_val($value...)
 	margin: $value
 
-=gvPadding_val($value)
+=gvPadding_val($value...)
 	padding: $value
 
 =gvBorder_val($side,$width,$style,$color)
@@ -28,11 +28,12 @@
 =gvRadius_val($top-left,$top-right,$bottom-left,$bottom-right)
 	border-radius: $top-left $top-right $bottom-right $bottom-left
 
-=gvTransition_val($value)
+
+=gvTransition_val($value...)
 	-webkit-transition: $value
 	transition: $value
 
-=gvAnimation_val($value)
+=gvAnimation_val($value...)
 	-webkit-animation: $value
 	animation: $value
 
