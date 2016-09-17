@@ -172,6 +172,19 @@ input {
   border: none;
 }
 
+.form-group {
+  margin-bottom: 3rem;
+}
+
+.carousel-indicators {
+  width: auto;
+  margin: 0;
+  left: auto;
+  right: auto;
+  bottom: 0;
+  padding: 1rem 0;
+}
+
 button,
 input[type="submit"],
 input[type="reset"],
@@ -198,84 +211,84 @@ input[type="button"]:hover {
   background-color: #97783c;
 }
 
-.gv-1 {
+.col-md-1-1 {
   width: 8.33333%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.gv-2 {
+.col-md-2-2 {
   width: 16.66667%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.gv-3 {
+.col-md-3-3 {
   width: 25%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.gv-4 {
+.col-md-4-4 {
   width: 33.33333%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.gv-5 {
+.col-md-5-5 {
   width: 41.66667%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.gv-6 {
+.col-md-6-6 {
   width: 50%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.gv-7 {
+.col-md-7-7 {
   width: 58.33333%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.gv-8 {
+.col-md-8-8 {
   width: 66.66667%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.gv-9 {
+.col-md-9-9 {
   width: 75%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.gv-10 {
+.col-md-10-10 {
   width: 83.33333%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.gv-11 {
+.col-md-11-11 {
   width: 91.66667%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.gv-12 {
+.col-md-12-12 {
   width: 100%;
   position: relative;
   float: right;
