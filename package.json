@@ -1,0 +1,30 @@
+{
+  "name": "besty-flow",
+  "version": "1.0.0",
+  "description": "Multiple classes = shape your styles",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahmoudZakaria90/besty-flow.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "Work flow",
+    "Fast web pages"
+  ],
+  "author": "Mahmoud Zakaria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahmoudZakaria90/besty-flow/issues"
+  },
+  "homepage": "https://github.com/mahmoudZakaria90/besty-flow#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-ruby-sass": "^2.1.0"
+  }
+}
