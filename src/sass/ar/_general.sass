@@ -21,6 +21,7 @@ body
 
 body
 	font-family: $main-face
+	font-size: $main-font
 	line-height: 1.5
 	color: $main-color
 	font-weight: 400
@@ -37,15 +38,7 @@ img
 	vertical-align: middle
 	border: none
 
-p,
-ul,
-ol,
-table,
-form,
-button,
-div,
-span
-	font-size: $main-font
+
 
 h1
 	font-size: $h1
@@ -107,43 +100,8 @@ input
 	border: none
 
 
-.form
-	&-group
-		margin-bottom: 3rem
-	&-control
+::-webkit-input-placeholder
+	color: #aaa
 
-.nav
-	&-tabs
-		&>li
-			&.active>a
-			&>a
-
-.pagination
-	&>li
-		&.active>a
-		&>a
-
-.breadcrumb
-	&>li
-		&.active>a
-		&>a
-
-.carousel
-	&-indicators
-		width: auto
-		margin: 0
-		left: auto
-		right: auto
-		bottom: 0
-		padding: 1rem 0
-		&>li
-.panel
-	&-group
-
-	&-heading
-
-	&-content
-
-	&-body
-
-//later adds
+::-moz-placeholder
+	color: #aaa
