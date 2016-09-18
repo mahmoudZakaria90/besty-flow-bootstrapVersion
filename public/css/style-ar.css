@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 1.5rem 0;
+  font-family: "Open Sans", sans-serif;
   font-weight: inherit;
   line-height: inherit;
 }
@@ -319,7 +319,7 @@ input[type="button"]:hover {
 .gv-main-face {
   font-family: "open-sans", sans-serif;
 }
-.gv-second-face {
+.gv-heading-face {
   font-family: "Open Sans", sans-serif;
 }
 .gv-bold {
