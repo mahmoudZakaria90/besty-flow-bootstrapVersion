@@ -656,6 +656,9 @@ input[type="button"]:hover {
 .gv-no-bullet {
   list-style: none;
 }
+.gv-no-margin {
+  margin: 0;
+}
 .gv-relative {
   position: relative;
 }

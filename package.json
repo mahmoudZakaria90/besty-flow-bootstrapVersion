@@ -1,7 +1,7 @@
 {
   "name": "besty-flow",
   "version": "1.0.0",
-  "description": "Multiple classes = shape your styles",
+  "description": "Multiple classes = Shape your styles + Make/edit your web pages faster",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

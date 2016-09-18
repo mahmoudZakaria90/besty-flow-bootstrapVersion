@@ -1,2 +1,2 @@
 # BestyFLow
-###### Multiple classes = Shape your styles + Make your web pages faster
+###### Multiple classes = Shape your styles + Make/edit your web pages faster
