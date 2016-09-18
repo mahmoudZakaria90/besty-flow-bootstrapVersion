@@ -3,11 +3,10 @@ $base: 12
 $gutter: 30
 @for $i from 1 through $base
 	.col-md-#{$i}
-		&-#{$i}
-			width: (($i / $base) * 100%)
-			position: relative
-			float: $dir
-			padding: 0  $gutter / 2 + px
+		width: (($i / $base) * 100%)
+		position: relative
+		float: $dir
+		padding: 0  $gutter / 2 + px
 
 //row 
 .row
