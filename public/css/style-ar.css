@@ -1,13 +1,19 @@
+/*@font-face */
 @font-face {
   font-family: "open-sans";
   src: url(fonts/OpenSans-Regular.tff) format("truetype");
 }
-/*Custom CSS */
+/*General */
 /*============ */
 * {
   margin: 0;
   padding: 0;
   outline: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -60,8 +66,14 @@ h4 {
   font-size: 1.8rem;
 }
 
-p {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0 0 1.5rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 1.5rem 0;
+  font-weight: inherit;
+  line-height: inherit;
 }
 
 input[type="text"],
@@ -196,84 +208,85 @@ input[type="button"]:hover {
   background-color: #97783c;
 }
 
-.col-md-1 {
+/*Grid */
+.gv-1 {
   width: 8.33333%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.col-md-2 {
+.gv-2 {
   width: 16.66667%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.col-md-3 {
+.gv-3 {
   width: 25%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.col-md-4 {
+.gv-4 {
   width: 33.33333%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.col-md-5 {
+.gv-5 {
   width: 41.66667%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.col-md-6 {
+.gv-6 {
   width: 50%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.col-md-7 {
+.gv-7 {
   width: 58.33333%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.col-md-8 {
+.gv-8 {
   width: 66.66667%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.col-md-9 {
+.gv-9 {
   width: 75%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.col-md-10 {
+.gv-10 {
   width: 83.33333%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.col-md-11 {
+.gv-11 {
   width: 91.66667%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.col-md-12 {
+.gv-12 {
   width: 100%;
   position: relative;
   float: right;
@@ -292,6 +305,17 @@ input[type="button"]:hover {
   clear: both;
 }
 
+.container {
+  max-width: 960px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+/*Header */
+/*Footer */
+/*Custom */
+/* @keyframes & transitions */
+/*Regular give.css */
 .gv-main-face {
   font-family: "open-sans", sans-serif;
 }
@@ -656,6 +680,9 @@ input[type="button"]:hover {
 .gv-no-bullet {
   list-style: none;
 }
+.gv-no-display {
+  display: none;
+}
 .gv-no-margin {
   margin: 0;
 }
@@ -698,7 +725,7 @@ input[type="button"]:hover {
   display: flex;
 }
 .gv-flex > * {
-  flex: 1 0 auto;
+  flex: 1 0;
 }
 .gv-flex-column {
   -webkit-flex-direction: column;

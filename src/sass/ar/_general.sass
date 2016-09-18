@@ -1,4 +1,4 @@
-/*Custom CSS*/
+/*General*/
 /*============*/
 
 //Simple reset
@@ -9,6 +9,10 @@
 	-webkit-box-sizing: border-box
 	-moz-box-sizing: border-box
 	box-sizing: border-box
+	&:before,&:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
 	
 //base font size
 \:root
@@ -52,8 +56,13 @@ h3
 h4
 	font-size: $h4
 
-p
+h1,h2,h3,h4,h5,h6,p
 	margin:  0 0 $reg 0
+
+h1,h2,h3,h4,h5,h6
+	margin:  0 0 $reg 0
+	font-weight: inherit
+	line-height: inherit
 
 button,
 input[type="submit"],

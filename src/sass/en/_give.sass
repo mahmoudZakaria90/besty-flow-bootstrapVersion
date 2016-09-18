@@ -1,4 +1,4 @@
-//Regular give.css
+/*Regular give.css*/
 .gv
 	//fonts
 	&-main-face
@@ -203,6 +203,8 @@
 			padding: 0
 		&-bullet
 			list-style: none
+		&-display
+			display: none
 		&-margin
 			margin: 0
 
@@ -239,9 +241,9 @@
 
 	//FLEX
 	&-flex
-		+gvFlexBox()
+		+gvFlex()
 		&>*
-			flex: 1 0 auto
+			flex: 1 0
 		&-column
 			+gvFlexColumn()
 

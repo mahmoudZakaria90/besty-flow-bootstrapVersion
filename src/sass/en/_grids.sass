@@ -1,12 +1,13 @@
-//Grid
+/*Grid*/
 $base: 12
 $gutter: 30
 @for $i from 1 through $base
-	.col-md-#{$i}
-		width: (($i / $base) * 100%)
-		position: relative
-		float: $dir
-		padding: 0  $gutter / 2 + px
+	.gv
+		&-#{$i}
+			width: (($i / $base) * 100%)
+			position: relative
+			float: $dir
+			padding: 0  $gutter / 2 + px
 
 //row 
 .row
@@ -19,3 +20,8 @@ $gutter: 30
 		display: table
 	&:after
 		clear: both
+
+.container
+	max-width: 960px
+	padding: 0 $reg
+	+gvMargin_val(0 auto)
