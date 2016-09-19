@@ -1,10 +1,10 @@
 // called mixins per value, called inside the selector only
-=gvFlexSelf_val($value)
-	-webkit-align-self: $value
-	-moz-align-self: $value
-	-o-align-self: $value
-	-ms-align-self: $value
-	align-self: $value
+=gvFlexAlign_val($align,$value)
+	-webkit-#{$align}: $value
+	-moz-#{$align}: $value
+	-o-#{$align}: $value
+	-ms-#{$align}: $value
+	#{$align}: $value
 
 =gvSize_val($width,$height)
 	width: $width

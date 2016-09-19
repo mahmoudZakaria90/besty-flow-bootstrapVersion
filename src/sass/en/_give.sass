@@ -232,7 +232,6 @@
 			overflow: scroll
 
 	//Shadow
-
 	&-shadow
 		&-box
 			box-shadow: 2px 2px 2px $border-color-default
@@ -241,36 +240,52 @@
 
 	//FLEX
 	&-flex
-		+gvFlex()
+		display: flex
 		&>*
 			flex: 1 0
+		&-row
+			flex-direction: row
+			&-reverse
+				flex-direction: row-reverse
 		&-column
-			+gvFlexColumn()
-
+			&-reverse
+				flex-direction: column-reverse
 		&-wrap
-			+gvFlexWrap()
+			flex-wrap: wrap
+			&-reverse
+				flex-wrap: wrap-reverse
 
 		&-center
-			+gvFlexCenter-v()
-			+gvFlexCenter-h()
+			align-items: center
+			justify-content: center
 			&-h
-				+gvFlexCenter-h()
+				justify-content: center
 			&-v
-				+gvFlexCenter-v()
-		&-start
-			+gvFlexStart-h()
-			+gvFlexStart-v()
-			&-h
-				+gvFlexStart-h()
-			&-v
-				+gvFlexStart-v()
+				align-items: center
 		&-end
-			+gvFlexEnd-h()
-			+gvFlexEnd-v()
+			align-items: flex-end
+			justify-content: flex-end
 			&-h
-				+gvFlexEnd-h()
+				justify-content: flex-end
 			&-v
-				+gvFlexEnd-v()
+				align-items: flex-end
+
+		&-stretch
+			align-items: stretch
+			&-content
+				align-content: stretch
+		&-sp
+			&-between
+				&-h
+					justify-content: space-between
+				&-v
+					align-content: space-between
+
+			&-around
+				&-h
+					justify-content: space-around
+				&-v
+					align-content: space-around
 
 		//Continue after me...
 

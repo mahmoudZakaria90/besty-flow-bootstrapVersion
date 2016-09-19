@@ -209,84 +209,84 @@ input[type="button"]:hover {
 }
 
 /*Grid */
-.gv-1 {
+.col-md-1 {
   width: 8.33333%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.gv-2 {
+.col-md-2 {
   width: 16.66667%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.gv-3 {
+.col-md-3 {
   width: 25%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.gv-4 {
+.col-md-4 {
   width: 33.33333%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.gv-5 {
+.col-md-5 {
   width: 41.66667%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.gv-6 {
+.col-md-6 {
   width: 50%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.gv-7 {
+.col-md-7 {
   width: 58.33333%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.gv-8 {
+.col-md-8 {
   width: 66.66667%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.gv-9 {
+.col-md-9 {
   width: 75%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.gv-10 {
+.col-md-10 {
   width: 83.33333%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.gv-11 {
+.col-md-11 {
   width: 91.66667%;
   position: relative;
   float: right;
   padding: 0 15px;
 }
 
-.gv-12 {
+.col-md-12 {
   width: 100%;
   position: relative;
   float: right;
@@ -718,104 +718,61 @@ input[type="button"]:hover {
   text-shadow: 2px 2px 2px #ddd;
 }
 .gv-flex {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -o-flex;
-  display: -ms-flex;
   display: flex;
 }
 .gv-flex > * {
   flex: 1 0;
 }
-.gv-flex-column {
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-flex-direction: column;
-  flex-direction: column;
+.gv-flex-row {
+  flex-direction: row;
+}
+.gv-flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.gv-flex-column-reverse {
+  flex-direction: column-reverse;
 }
 .gv-flex-wrap {
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  -o-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+.gv-flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
 .gv-flex-center {
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
   align-items: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
   justify-content: center;
 }
 .gv-flex-center-h {
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
   justify-content: center;
 }
 .gv-flex-center-v {
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
   align-items: center;
 }
-.gv-flex-start {
-  -webkit-justify-content: flex-start;
-  -moz-justify-content: flex-start;
-  -ms-justify-content: flex-start;
-  -o-justify-content: flex-start;
-  justify-content: flex-start;
-  -webkit-align-items: flex-start;
-  -moz-align-items: flex-start;
-  -ms-align-items: flex-start;
-  -o-align-items: flex-start;
-  align-items: flex-start;
-}
-.gv-flex-start-h {
-  -webkit-justify-content: flex-start;
-  -moz-justify-content: flex-start;
-  -ms-justify-content: flex-start;
-  -o-justify-content: flex-start;
-  justify-content: flex-start;
-}
-.gv-flex-start-v {
-  -webkit-align-items: flex-start;
-  -moz-align-items: flex-start;
-  -ms-align-items: flex-start;
-  -o-align-items: flex-start;
-  align-items: flex-start;
-}
 .gv-flex-end {
-  -webkit-justify-content: flex-end;
-  -moz-justify-content: flex-end;
-  -ms-justify-content: flex-end;
-  -o-justify-content: flex-end;
-  justify-content: flex-end;
-  -webkit-align-items: flex-end;
-  -moz-align-items: flex-end;
-  -ms-align-items: flex-end;
-  -o-align-items: flex-end;
   align-items: flex-end;
+  justify-content: flex-end;
 }
 .gv-flex-end-h {
-  -webkit-justify-content: flex-end;
-  -moz-justify-content: flex-end;
-  -ms-justify-content: flex-end;
-  -o-justify-content: flex-end;
   justify-content: flex-end;
 }
 .gv-flex-end-v {
-  -webkit-align-items: flex-end;
-  -moz-align-items: flex-end;
-  -ms-align-items: flex-end;
-  -o-align-items: flex-end;
   align-items: flex-end;
+}
+.gv-flex-stretch {
+  align-items: stretch;
+}
+.gv-flex-stretch-content {
+  align-content: stretch;
+}
+.gv-flex-sp-between-h {
+  justify-content: space-between;
+}
+.gv-flex-sp-between-v {
+  align-content: space-between;
+}
+.gv-flex-sp-around-h {
+  justify-content: space-around;
+}
+.gv-flex-sp-around-v {
+  align-content: space-around;
 }
