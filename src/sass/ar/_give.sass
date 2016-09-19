@@ -15,8 +15,6 @@
 
 	&-underline
 		text-decoration: underline
-		&-no
-			text-decoration: none
 
 	&-uppercase
 		text-transform: uppercase
@@ -128,6 +126,8 @@
 			float: $dir
 		&-right
 			float: $dir-opp
+	&-clear
+		clear: both
 
 	//color & background-color
 	&-color-main
@@ -207,6 +207,10 @@
 			display: none
 		&-margin
 			margin: 0
+		&-float
+			float: none
+		&-underline
+			text-decoration: none
 
 	//positions
 	&-relative
@@ -242,7 +246,8 @@
 	&-flex
 		display: flex
 		&>*
-			flex: 1 0
+			flex-grow: 1
+			flex-shrink: 0
 		&-row
 			flex-direction: row
 			&-reverse
