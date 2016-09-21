@@ -34,14 +34,15 @@ body {
   line-height: 1.5;
   color: #1a1a1a;
   font-weight: 400;
+  direction: ltr;
 }
 
 /*Give All anchors/button a transition */
 a,
 button,
 input {
-  -webkit-transition: all 450ms;
-  transition: all 450ms;
+  -webkit-transition: background-color 450ms, color 450ms;
+  transition: background-color 450ms, color 450ms;
 }
 
 img {
@@ -134,14 +135,17 @@ h6 a {
 
 .fa {
   margin: 0 1.5rem 0;
+  text-decoration: none;
+  font-size: 2.5rem;
 }
 
 label {
   font-weight: normal;
 }
 
-input {
+input, button {
   border: none;
+  color: inherit;
 }
 
 ::-webkit-input-placeholder {
@@ -156,13 +160,11 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  background: transparent;
-  border: 1px solid #ddd;
+  background: #fff;
   border-radius: 0.4rem;
   padding: 0.3em 1.5em;
   cursor: pointer;
   position: relative;
-  box-shadow: 0 2px 5px #ddd;
 }
 button:active,
 input[type="submit"]:active,
@@ -175,7 +177,8 @@ button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
-  background-color: #97783c;
+  background-color: #1a1a1a;
+  color: #fff;
 }
 
 /*Grid */
@@ -267,21 +270,19 @@ input[type="button"]:hover {
   margin: 0 -1.5rem;
 }
 
-.clf:before, .clf:after {
-  content: " ";
-  display: table;
-}
-.clf:after {
-  clear: both;
-}
-
-.container {
-  max-width: 960px;
-  padding: 0 1.5rem;
-  margin: 0 auto;
-}
-
 /*Header */
+.header-collapse {
+  overflow: hidden;
+  height: 0;
+}
+.header-burger:active {
+  top: 0;
+}
+.header-nav-wrap li a {
+  display: block;
+  padding: 1rem;
+}
+
 /*Footer */
 /*Custom */
 /* @keyframes & transitions */
@@ -303,9 +304,6 @@ input[type="button"]:hover {
 }
 .gv-underline {
   text-decoration: underline;
-}
-.gv-underline-no {
-  text-decoration: none;
 }
 .gv-uppercase {
   text-transform: uppercase;
@@ -332,7 +330,7 @@ input[type="button"]:hover {
   margin: 4rem;
 }
 .gv-margin-md {
-  margin: 2rem;
+  margin: 3rem;
 }
 .gv-margin-sm {
   margin: 1rem;
@@ -341,28 +339,36 @@ input[type="button"]:hover {
   margin: 0 auto;
 }
 .gv-margin-tb {
-  margin: 1.5rem 0;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .gv-margin-tb-lg {
-  margin: 4rem 0;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 .gv-margin-tb-md {
-  margin: 2rem 0;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .gv-margin-tb-sm {
-  margin: 1rem 0;
+  margin-top: 1rem;
+  margin-top: 1rem;
 }
 .gv-margin-rl {
-  margin: 0 1.5rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
 }
 .gv-margin-rl-lg {
-  margin: 0 4rem;
+  margin-right: 4rem;
+  margin-left: 4rem;
 }
 .gv-margin-rl-md {
-  margin: 0 2rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
 }
 .gv-margin-rl-sm {
-  margin: 0 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 .gv-margin-top {
   margin-top: 1.5rem;
@@ -371,7 +377,7 @@ input[type="button"]:hover {
   margin-top: 4rem;
 }
 .gv-margin-top-md {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .gv-margin-top-sm {
   margin-top: 1rem;
@@ -383,7 +389,7 @@ input[type="button"]:hover {
   margin-right: 4rem;
 }
 .gv-margin-right-md {
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 .gv-margin-right-sm {
   margin-right: 1rem;
@@ -395,7 +401,7 @@ input[type="button"]:hover {
   margin-bottom: 4rem;
 }
 .gv-margin-bottom-md {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .gv-margin-bottom-sm {
   margin-bottom: 1rem;
@@ -407,7 +413,7 @@ input[type="button"]:hover {
   margin-left: 4rem;
 }
 .gv-margin-left-md {
-  margin-left: 2rem;
+  margin-left: 3rem;
 }
 .gv-margin-left-sm {
   margin-left: 1rem;
@@ -419,34 +425,42 @@ input[type="button"]:hover {
   padding: 4rem;
 }
 .gv-padding-md {
-  padding: 2rem;
+  padding: 3rem;
 }
 .gv-padding-sm {
   padding: 1rem;
 }
 .gv-padding-tb {
-  padding: 1.5rem 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .gv-padding-tb-lg {
-  padding: 4rem 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 .gv-padding-tb-md {
-  padding: 2rem 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .gv-padding-tb-sm {
-  padding: 1rem 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .gv-padding-rl {
-  padding: 0 1.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 .gv-padding-rl-lg {
-  padding: 0 4rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
 }
 .gv-padding-rl-md {
-  padding: 0 2rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
 }
 .gv-padding-rl-sm {
-  padding: 0 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 .gv-padding-top {
   padding-top: 1.5rem;
@@ -455,7 +469,7 @@ input[type="button"]:hover {
   padding-top: 4rem;
 }
 .gv-padding-top-md {
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 .gv-padding-top-sm {
   padding-top: 1rem;
@@ -467,7 +481,7 @@ input[type="button"]:hover {
   padding-right: 4rem;
 }
 .gv-padding-right-md {
-  padding-right: 2rem;
+  padding-right: 3rem;
 }
 .gv-padding-right-sm {
   padding-right: 1rem;
@@ -479,7 +493,7 @@ input[type="button"]:hover {
   padding-bottom: 4rem;
 }
 .gv-padding-bottom-md {
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 .gv-padding-bottom-sm {
   padding-bottom: 1rem;
@@ -491,7 +505,7 @@ input[type="button"]:hover {
   padding-left: 4rem;
 }
 .gv-padding-left-md {
-  padding-left: 2rem;
+  padding-left: 3rem;
 }
 .gv-padding-left-sm {
   padding-left: 1rem;
@@ -574,6 +588,9 @@ input[type="button"]:hover {
 .gv-float-right {
   float: right;
 }
+.gv-clear {
+  clear: both;
+}
 .gv-color-main {
   color: #1a1a1a;
 }
@@ -644,6 +661,12 @@ input[type="button"]:hover {
 .gv-decimal {
   list-style: decimal;
 }
+.gv-rtl {
+  direction: rtl;
+}
+.gv-ltr {
+  direction: ltr;
+}
 .gv-no-padding {
   padding: 0;
 }
@@ -655,6 +678,12 @@ input[type="button"]:hover {
 }
 .gv-no-margin {
   margin: 0;
+}
+.gv-no-float {
+  float: none;
+}
+.gv-no-underline {
+  text-decoration: none;
 }
 .gv-relative {
   position: relative;
@@ -682,16 +711,17 @@ input[type="button"]:hover {
   overflow: scroll;
 }
 .gv-shadow-box {
-  box-shadow: 2px 2px 2px #ddd;
+  box-shadow: 0px 2px 2px #ddd;
 }
 .gv-shadow-text {
-  text-shadow: 2px 2px 2px #ddd;
+  text-shadow: 0px 2px 2px #ddd;
 }
 .gv-flex {
   display: flex;
 }
-.gv-flex > * {
-  flex: 1 0;
+.gv-flex-grow {
+  flex-grow: 1;
+  flex-shrink: 0;
 }
 .gv-flex-row {
   flex-direction: row;

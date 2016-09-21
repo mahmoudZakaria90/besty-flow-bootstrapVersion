@@ -1,5 +1,16 @@
-
+@import responsive
 /*Exceptions*/
+
+@media(min-width: #{$tablet-portrait})
+	.header
+		&-head
+			display: none
+		&-collapse
+			height: auto
+
+		&-nav-wrap
+			&>li
+				float: left
 
 @media(max-width: 1366px)	
 
@@ -14,8 +25,6 @@
 
 
 @media (min-width: 1200px)
-	.container
-		width: 970px
 
 @media(max-width: 1366px)
 	
