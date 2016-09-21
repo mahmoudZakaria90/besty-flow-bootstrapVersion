@@ -1,46 +1,49 @@
 // called mixins per value, called inside the selector only
-=gvFlexAlign_val($align,$value)
+=gvFlexAlign($align,$value)
 	-webkit-#{$align}: $value
 	-moz-#{$align}: $value
 	-o-#{$align}: $value
 	-ms-#{$align}: $value
 	#{$align}: $value
 
-=gvSize_val($width,$height)
+=gvSize($width,$height)
 	width: $width
 	height: $height
 
-=gvFont_val($family,$size,$weight)
+=gvFont($family,$size,$weight)
 	font:
 		family: $family
 		size: $size
 		weight: $weight
 
-=gvMargin_val($value...)
+=gvMargin($value...)
 	margin: $value
 
-=gvPadding_val($value...)
+=gvPadding($value...)
 	padding: $value
 
-=gvBorder_val($side,$width,$style,$color)
+=gvBorder($side,$width,$style,$color)
 	border-#{$side}: $width $style $color
 
-=gvRadius_val($top-left,$top-right,$bottom-left,$bottom-right)
+=gvRadius($top-left,$top-right,$bottom-left,$bottom-right)
 	border-radius: $top-left $top-right $bottom-right $bottom-left
 
-
-=gvTransition_val($value...)
+=gvTransition($value...)
 	-webkit-transition: $value
 	transition: $value
 
-=gvAnimation_val($value...)
+=gvTransitionD($prop: all, $dur: 450ms)
+	-webkit-transition: $prop $dur
+	transition: $prop $dur
+	
+=gvAnimation($value...)
 	-webkit-animation: $value
 	animation: $value
 
-=gvShadow_val($type,$value...)
+=gvShadow($type,$value...)
 	#{$type}-shadow: $value
 
 //Gradient
-=gvGradient_val($type,$colorStops...)
+=gvGradient($type,$colorStops...)
 	background-image: #{$type}-gradient($colorStops)
 
