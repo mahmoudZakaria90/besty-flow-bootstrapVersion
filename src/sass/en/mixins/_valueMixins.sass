@@ -40,6 +40,12 @@
 	-webkit-animation: $value
 	animation: $value
 
+=gvPosition($type,$value)
+	position: $type
+	$values: (top,right,bottom,left)
+	@for $i from 1 through 4
+		#{nth($values, $i)}: nth($val,$i)
+		
 =gvShadow($type,$value...)
 	#{$type}-shadow: $value
 

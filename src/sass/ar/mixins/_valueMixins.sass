@@ -35,6 +35,12 @@
 =gvTransitionD($prop: all, $dur: 450ms)
 	-webkit-transition: $prop $dur
 	transition: $prop $dur
+
+=gvPosition($type,$value)
+	position: $type
+	$values: (top,right,bottom,left)
+	@for $i from 1 through 4
+		#{nth($values, $i)}: nth($val,$i)
 	
 =gvAnimation($value...)
 	-webkit-animation: $value
